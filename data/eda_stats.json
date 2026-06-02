@@ -1,0 +1,38 @@
+{
+  "total_issues": 5442,
+  "repos": 37,
+  "class_counts": {
+    "rapido": 2577,
+    "normal": 1547,
+    "lento": 833,
+    "muy_lento": 485
+  },
+  "class_pcts": {
+    "rapido": 0.474,
+    "normal": 0.284,
+    "lento": 0.153,
+    "muy_lento": 0.089
+  },
+  "resolution_stats": {
+    "count": 5442.0,
+    "mean": 14.9,
+    "std": 85.1,
+    "min": 0.0,
+    "25%": 0.09,
+    "50%": 1.2,
+    "75%": 6.72,
+    "max": 2688.27
+  },
+  "top_repos": {
+    "golang/go": 688,
+    "microsoft/vscode": 359,
+    "microsoft/TypeScript": 281,
+    "vuejs/vue": 252,
+    "home-assistant/core": 224,
+    "pallets/flask": 215,
+    "vitejs/vite": 211,
+    "docker/compose": 203,
+    "symfony/symfony": 187,
+    "flutter/flutter": 181
+  }
+}
