@@ -178,6 +178,27 @@ X_train, X_test, y_train, y_test = train_test_split(
 20% test          (1,089 issues) → evaluación con datos nunca vistos
 ```
 
+La función devuelve 4 variables:
+
+```
+X = todas las features (texto + numéricas) — las ENTRADAS
+y = todas las etiquetas (rapido/normal/lento) — las SALIDAS esperadas
+
+X_train → el 80% de las entradas    → con esto ENTRENA el modelo
+y_train → el 80% de las etiquetas   → las respuestas correctas del 80%
+X_test  → el 20% de las entradas    → con esto EVALÚA el modelo
+y_test  → el 20% de las etiquetas   → las respuestas correctas del 20%
+```
+
+Analogía con un examen:
+```
+X_train + y_train = libro de estudio con respuestas → el modelo aprende
+X_test            = examen real sin respuestas       → el modelo predice
+y_test            = solucionario del examen          → comparamos para calcular accuracy
+```
+
+El modelo **nunca ve `y_test` durante el entrenamiento**. Si lo viera, sería trampa — como darle las respuestas del examen antes de hacerlo.
+
 - `test_size=0.2` → reserva el 20% para test
 - `random_state=42` → el corte es siempre el mismo (reproducible)
 - `stratify=y` → garantiza que la proporción de clases sea idéntica en train y test. Sin esto podría ocurrir que el test tuviera el doble de `lento` que el train y las métricas serían engañosas.
